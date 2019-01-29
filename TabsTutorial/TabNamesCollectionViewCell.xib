@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TabNameID" id="gTV-IL-0wX" customClass="TabNamesCollectionViewCell" customModule="TabsTutorial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="116" height="82"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmR-JO-tEM">
+                        <rect key="frame" x="10" y="10" width="96" height="62"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfs-iK-Tvp">
+                                <rect key="frame" x="0.0" y="0.0" width="96" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jfs-iK-Tvp" secondAttribute="bottom" id="CKu-jk-kIl"/>
+                            <constraint firstItem="jfs-iK-Tvp" firstAttribute="top" secondItem="wmR-JO-tEM" secondAttribute="top" id="a4i-R6-7lZ"/>
+                            <constraint firstAttribute="trailing" secondItem="jfs-iK-Tvp" secondAttribute="trailing" id="cPj-Bh-Vs4"/>
+                            <constraint firstItem="jfs-iK-Tvp" firstAttribute="leading" secondItem="wmR-JO-tEM" secondAttribute="leading" id="uxa-Oq-rjN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wmR-JO-tEM" secondAttribute="trailing" constant="10" id="3oG-jj-Wkb"/>
+                <constraint firstAttribute="bottom" secondItem="wmR-JO-tEM" secondAttribute="bottom" constant="10" id="6Fe-Dk-aw4"/>
+                <constraint firstItem="wmR-JO-tEM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="HIT-R3-QPh"/>
+                <constraint firstItem="wmR-JO-tEM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="cje-Go-i9E"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="116" height="82"/>
+            <connections>
+                <outlet property="tabNameBackgroundView" destination="wmR-JO-tEM" id="DMS-Jd-aHg"/>
+                <outlet property="tabNameLbl" destination="jfs-iK-Tvp" id="BvZ-vH-U8y"/>
+            </connections>
+            <point key="canvasLocation" x="-130" y="70"/>
+        </collectionViewCell>
+    </objects>
+</document>
